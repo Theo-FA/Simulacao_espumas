@@ -174,7 +174,7 @@ class Nucleation(SteppableBasePy):
         print("------------------------------------------------------------------------------------------------")
 
           
-        # Gr�ficos no player
+        # Gráficos no player
         self.pW1 = self.add_new_plot_window(title='Number of Cells',
                                                  x_axis_title='MCS',
                                                  y_axis_title='Counts', x_scale_type='linear', y_scale_type='linear',
@@ -211,7 +211,7 @@ class Nucleation(SteppableBasePy):
         distance2 = round(dx**2 + dy**2)
         return distance2 <= (radius**2)
     
-    # Hip�tese antiga antes do "cilindro dentro do cilindro"
+    # Hipótese antiga antes do "cilindro dentro do cilindro"
     # Antes checava uma esfera pr�xima do ponto sorteado
     def in_sphere(self, x, y, z, radius, center_x, center_y, center_z, lattice_x, lattice_y):
         dx = min(abs(center_x-x), center_x+lattice_x-x)
