@@ -84,8 +84,6 @@ class ShortRunBenchmarkSteppable(SteppableBasePy):
       )
       self.stop_simulation()  # close CC3d
 
-#A partir daqui é o original
-
 class FilmSetup(SteppableBasePy):
     def __init__(self, frequency=1):
         SteppableBasePy.__init__(self, frequency)
